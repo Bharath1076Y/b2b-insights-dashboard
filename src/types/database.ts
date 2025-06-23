@@ -184,7 +184,7 @@ export interface ExporterSubscription {
   payment_id: string;
   order_id: string;
   amount: string;
-  status: 'pending' | 'completed' | 'failed';
+  status: 'pending' | 'completed' | 'failed' | 'active';
   created_at: string;
   updated_at: string;
   payment_method: string;
