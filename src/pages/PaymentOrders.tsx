@@ -66,8 +66,9 @@ export default function PaymentOrders() {
   const getStatusBadge = (status: string) => {
     switch (status) {
       case 'completed':
-      case 'active':
         return <Badge className="bg-green-100 text-green-800">Completed</Badge>;
+      case 'active':
+        return <Badge className="bg-green-100 text-green-800">Active</Badge>;
       case 'pending':
         return <Badge className="bg-yellow-100 text-yellow-800">Pending</Badge>;
       case 'failed':
