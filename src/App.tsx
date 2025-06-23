@@ -8,6 +8,16 @@ import { DashboardLayout } from "@/components/layout/DashboardLayout";
 import Index from "./pages/Index";
 import Analytics from "./pages/Analytics";
 import Exporters from "./pages/Exporters";
+import Importers from "./pages/Importers";
+import Products from "./pages/Products";
+import Messages from "./pages/Messages";
+import BuyLeads from "./pages/BuyLeads";
+import Subscriptions from "./pages/Subscriptions";
+import SlotManagement from "./pages/SlotManagement";
+import PaymentOrders from "./pages/PaymentOrders";
+import ProfileVisits from "./pages/ProfileVisits";
+import Notifications from "./pages/Notifications";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,82 +42,52 @@ const App = () => (
           } />
           <Route path="/importers" element={
             <DashboardLayout>
-              <div className="p-8 text-center">
-                <h1 className="text-2xl font-bold">Importers Management</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
+              <Importers />
             </DashboardLayout>
           } />
           <Route path="/products" element={
             <DashboardLayout>
-              <div className="p-8 text-center">
-                <h1 className="text-2xl font-bold">Products Management</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
+              <Products />
             </DashboardLayout>
           } />
           <Route path="/messages" element={
             <DashboardLayout>
-              <div className="p-8 text-center">
-                <h1 className="text-2xl font-bold">Messages</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
-            </DashboardLayout>
-          } />
-          <Route path="/subscriptions" element={
-            <DashboardLayout>
-              <div className="p-8 text-center">
-                <h1 className="text-2xl font-bold">Subscriptions</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
-            </DashboardLayout>
-          } />
-          <Route path="/slots" element={
-            <DashboardLayout>
-              <div className="p-8 text-center">
-                <h1 className="text-2xl font-bold">Slot Management</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
-            </DashboardLayout>
-          } />
-          <Route path="/payments" element={
-            <DashboardLayout>
-              <div className="p-8 text-center">
-                <h1 className="text-2xl font-bold">Payment Orders</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
-            </DashboardLayout>
-          } />
-          <Route path="/profile-visits" element={
-            <DashboardLayout>
-              <div className="p-8 text-center">
-                <h1 className="text-2xl font-bold">Profile Visits</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
+              <Messages />
             </DashboardLayout>
           } />
           <Route path="/buy-leads" element={
             <DashboardLayout>
-              <div className="p-8 text-center">
-                <h1 className="text-2xl font-bold">Buy Leads</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
+              <BuyLeads />
+            </DashboardLayout>
+          } />
+          <Route path="/subscriptions" element={
+            <DashboardLayout>
+              <Subscriptions />
+            </DashboardLayout>
+          } />
+          <Route path="/slots" element={
+            <DashboardLayout>
+              <SlotManagement />
+            </DashboardLayout>
+          } />
+          <Route path="/payments" element={
+            <DashboardLayout>
+              <PaymentOrders />
+            </DashboardLayout>
+          } />
+          <Route path="/profile-visits" element={
+            <DashboardLayout>
+              <ProfileVisits />
             </DashboardLayout>
           } />
           <Route path="/notifications" element={
             <DashboardLayout>
-              <div className="p-8 text-center">
-                <h1 className="text-2xl font-bold">Notifications</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
+              <Notifications />
             </DashboardLayout>
           } />
           <Route path="/settings" element={
             <DashboardLayout>
-              <div className="p-8 text-center">
-                <h1 className="text-2xl font-bold">Settings</h1>
-                <p className="text-muted-foreground mt-2">Coming soon...</p>
-              </div>
+              <Settings />
             </DashboardLayout>
           } />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
